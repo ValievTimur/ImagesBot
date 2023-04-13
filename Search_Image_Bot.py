@@ -9,8 +9,7 @@ mes = {'helping': '''Отправь мне запрос, а я найду по �
 'about': '''Меня создал Тимур --> @T_i_m_u_p_k_a \n\nВведенный текстовый запрос отправляется через API запрос на хостинг картинок Unsplash.'''}
 
 # создаем обьект бота и кнопки
-TOKEN = 'your_TelegramBot_APItoken'
-bot = telebot.TeleBot(TOKEN)
+bot = telebot.TeleBot('your_TelegramBot_APItoken')
 keys = ReplyKeyboardMarkup(resize_keyboard=True)
 keys.add(KeyboardButton('О проекте'))
 keys.add(KeyboardButton('Помощь'))
