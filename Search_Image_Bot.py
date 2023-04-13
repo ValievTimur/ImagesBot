@@ -9,7 +9,8 @@ mes = {'helping': '''Отправь мне запрос, а я найду по �
 'about': '''Меня создал Тимур --> @T_i_m_u_p_k_a \n\nВведенный текстовый запрос отправляется через API запрос на хостинг картинок Unsplash.'''}
 
 # создаем обьект бота и кнопки
-bot = telebot.TeleBot('6223766493:AAFQZJrUOCE7e9C7u0BNLBJOeka4Gb3O0M4')
+TOKEN = 'your_TelegramBot_APItoken'
+bot = telebot.TeleBot(TOKEN)
 keys = ReplyKeyboardMarkup(resize_keyboard=True)
 keys.add(KeyboardButton('О проекте'))
 keys.add(KeyboardButton('Помощь'))
@@ -20,7 +21,7 @@ inline_keys.add(InlineKeyboardButton('Мне не понравилось!', call
 def get_image(query):
     params = {
         'query': query,
-        'client_id': 'ea2LOFJk7qNeowtjX9--FvZmr6N32Nsp6S8Hyyn8wu0'
+        'client_id': 'HuggingFace_TOKEN'
     }
     try:
         response = requests.get('https://api.unsplash.com/photos/random', params=params)
