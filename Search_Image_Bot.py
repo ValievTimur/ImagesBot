@@ -2,7 +2,6 @@ import telebot
 from telebot.types  import ReplyKeyboardMarkup, KeyboardButton, InlineKeyboardMarkup, InlineKeyboardButton
 import requests, json
 from googletrans import Translator
-import openai
 from gpytranslate import SyncTranslator
 
 users = []
